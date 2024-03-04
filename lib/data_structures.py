@@ -43,10 +43,7 @@ def get_average_heat_level(spicy_foods):
     total_heat = sum(food["heat_level"] for food in spicy_foods)
     num_foods = len(spicy_foods)
 
-    if num_foods == 0:
-        return 0  # Avoid division by zero if the list is empty
-    else:
-        return total_heat // num_foods
+    return total_heat // num_foods
 
 def create_spicy_food(spicy_foods, spicy_food):
     spicy_foods.append(spicy_food)
